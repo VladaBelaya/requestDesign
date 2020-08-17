@@ -1,0 +1,107 @@
+.slider
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 21px
+    
+                 
+    &__li
+        
+        &::after
+            content: ''
+            border-bottom: 1px solid #e3e3e3
+            width: 353px
+            display: block
+            position: relative
+            left: -27px
+            top: 15px
+        &:nth-child(10)
+            &::after
+                border-bottom: none
+        &_yellow
+            font-size: 24px
+            font-weight: 400
+            color: #ffaf2d
+            text-align: center 
+    &__ul
+        list-style-type: none
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        width: 270px
+        height: 476px
+        background-color: #fff 
+        padding: 0px 22px 0px 27px 
+    &__link
+        text-decoration: none
+        font-size: 16px
+        font-weight: 300
+        color: #303030  
+        transition-duration: 0.3s 
+        &:hover
+            color: #ffaf2d
+    &__sale
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        align-items: flex-start
+        width: 290px
+        height: 472px
+        border-radius: 2px
+        border: solid 2px #ffaf2d
+        background-color: #ffffff
+        img
+            margin-left: 18px
+        a 
+            font-size: 18px
+            font-weight: 300
+            color: #ffaf2d
+            text-decoration: none
+            margin-bottom: 50px
+            margin-left: 20px
+            margin-top: 25px
+
+    &__text
+        font-size: 18px
+        font-weight: 400
+        color: #121212
+        margin-left: 20px
+        margin-top: 22px
+    &__Sale 
+        font-size: 40px
+        font-weight: normal
+        color: #121212
+        margin-left: 20px
+        margin-top: 5px
+
+.arrow
+    &::before
+        content: ''
+        width: 7px
+        left: 95%
+        bottom: 12px
+        transform: rotate(25deg)
+        display: block
+        position: relative
+        border: 1px solid rgba(48, 48, 48, 0.4)    
+    &::after
+        content: ''
+        width: 7px
+        left: 95%
+        bottom: 10px
+        transform: rotate(-25deg)
+        display: block
+        position: relative
+        border: 1px solid rgba(48, 48, 48, 0.4)
+    &_yellow
+        &::before
+            left: 180px
+            border: 1px solid #ffaf2d    
+        &::after
+            left: 180px
+            border: 1px solid #ffaf2d
+            
+            
+    
+
+       
