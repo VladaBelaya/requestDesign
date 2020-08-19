@@ -3,10 +3,14 @@
     display: flex
     justify-content: space-around
     align-items: center
+    flex-wrap: wrap
     &__descrs
         width: 850px
     &__info
-        width: 260px
+        width: 270px
+        margin-left: 95px
+        
+        
     &__heading
         font-size: 40px
         font-weight: normal
@@ -22,3 +26,58 @@
         font-size: 40px
         font-weight: 300
         color: #121212
+        margin-top: 35px
+    &__comp
+        font-size: 24px
+        font-weight: normal
+        color: #121212
+        div
+            font-size: 18px
+            font-weight: 300
+            color: #777777
+    &__inform
+        margin-top: 30px
+       
+        ul 
+            list-style-type: none
+            font-size: 18px
+            font-weight: 300
+            color: #171717
+.plus  
+    button
+        margin-top: 40px
+        width: 50px
+        height: 50px
+        background-color: #232323
+        border-radius: 100%
+        border: none
+        margin-left: 80px
+        cursor: pointer
+        transition: 0.3s background
+        &::after
+            content: ''
+            border: 1px solid #ffffff
+            width: 13px
+            display: block
+            margin: 0 auto
+        &::before
+            content: ''
+            border: 1px solid #ffffff
+            display: block
+            margin: 0 auto
+            position: relative
+            top: 3px
+            width: 13px
+            transform: rotate(90deg)
+        &:hover
+            background-color: #ffaf2d
+            &::after
+                border: 1px solid #000000
+            &::before
+                border: 1px solid #000000
+                
+                
+            
+            
+            
+    
