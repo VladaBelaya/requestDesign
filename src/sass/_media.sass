@@ -35,14 +35,15 @@
         &__ul
             width: 250px
         &__li 
-            &::after
-                width: 299px
-                top: 10px
-        li 
-            &:nth-child(10)
-                &::after        
             &_yellow
                 font-size: 22px
+            &::after
+                width: 299px
+                top: 12px
+                
+                    
+                   
+            
         &__sale
             width: 270px
     .swiper-container 
@@ -174,10 +175,13 @@
 
 @media (max-width:1199px)
     .container
-        max-width: 800px
+        max-width: 970px
+        &_category
+            display: none
     .header
         background-color: #e8e7e7
-        min-height: 50px
+        min-height: 65px
+        padding-bottom: 10px
         ul 
             li 
                 color: #ffffff
@@ -215,7 +219,7 @@
             flex-direction: column
             justify-content: center
             align-items: center
-            margin: 10px 0 0 10px
+            margin: 0 25px 0 10px
             span
                 display: block
                 height: 3px
@@ -240,3 +244,162 @@
                         transform: translateY(0px) rotate(45deg)
         nav
             display: flex
+            align-items: center
+            min-height: 100%
+            justify-content: space-between
+             
+        .logo
+           
+            &_none
+                display: block
+                bottom: 5px
+                text-decoration: none
+                line-height: 20px
+                font-size: 30px
+                position: relative
+                
+            img 
+                position: relative
+                top: 13px
+            div
+                font-size: 18px
+                font-weight: 300
+                color: #777777
+                margin-left: 50px
+        &__search
+            display: block
+            height: 50px
+        &__tel
+            display: block
+            height: 50px
+        &__basket
+            display: block
+            position: relative
+            bottom: 10px
+        &__icons
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 200px
+        .basket-yellow
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            div
+                font-size: 20px
+                font-weight: 300
+                color: #fda11c
+        &__block
+            display: flex
+            align-items: center
+    .search
+        display: none
+    .category
+        margin-top: 10px
+        min-height: 80px
+        background-color: #e8e7e7
+        box-shadow: none
+        border-top: 1px solid #d6d6d6
+        padding-top: 10px
+        &__mobile
+            min-height: 80px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin: 0 40px 0 20px 
+        &__equip
+            display: block
+            font-size: 30px
+            font-weight: 300
+        &__arr
+            display: block
+            margin-top: 15px
+            &::before
+                content: ''
+                width: 20px
+                left: 95%
+                bottom: 12px
+                transform: rotate(30deg)
+                display: block
+                position: relative
+                border: 2px solid #777777
+                background-color: #777777
+            &::after
+                content: ''
+                width: 20px
+                left: 95%
+                bottom: 5px
+                transform: rotate(-30deg)
+                display: block
+                position: relative
+                border: 2px solid #777777
+                background-color: #777777
+    .slider
+        margin: 0
+        flex-direction: column
+        &__menu
+            display: none
+        &__sale
+            margin-top: 30px
+            width: 690px
+            height: 476px
+            border-radius: 2px
+            border: solid 2px #faad3d
+            img
+                width: 118px
+                height: 146px
+            a 
+                font-size: 30px
+                font-weight: 300
+        .arrow
+            &_yellow
+                &::before
+                    left: 280px
+                    bottom: 20px
+                    border: 1px solid #ffaf2d   
+                    width: 15px 
+                    transform: rotate(30deg)
+
+                &::after
+                    width: 15px 
+                    bottom: 14px
+                    left: 280px
+                    border: 1px solid #ffaf2d
+                    transform: rotate(-30deg)
+
+        &__text
+            font-size: 25px
+            font-weight: 300
+        &__Sale 
+            font-size: 50px
+            font-weight: 400
+            color: #191919
+    .swiper-container 
+        width: 100%
+        height: 550px
+    .swiper-slide
+        width: 100%
+        &_active
+            width: 100%
+    .swiper
+        &__img
+            img
+                width: 274px
+                height: 387px
+        &__sclif
+            font-weight: normal
+            font-size: 40px
+            color: #f3f1f1
+        &__descrs
+            width: 400px
+        &__equipment
+            font-size: 25px
+        &__portfolio
+            font-size: 25px
+        &__link
+            button
+                font-size: 30px
+                border-radius: 18px
+                padding: 14px 35px
+                margin: 0
