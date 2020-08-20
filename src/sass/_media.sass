@@ -1,6 +1,9 @@
 @media (max-width:1675px)
     .container
         max-width: 1100px
+        &_category
+            flex-wrap: wrap
+        
     .header
         ul 
             li
@@ -22,6 +25,153 @@
         .people
             margin-right: 20px
     .category
+        min-height: 170px
+        img
+            height: 40px
+            width: auto
+        &__link
+            margin-right: 50px
+    .slider
+        &__ul
+            width: 250px
+        &__li 
+            &::after
+                width: 299px
+                top: 10px
+        li 
+            &:nth-child(10)
+                &::after        
+            &_yellow
+                font-size: 22px
+        &__sale
+            width: 270px
+    .swiper-container 
+        width: 500px
+    .swiper-slide
+        justify-content: space-around
+    .swiper
+        &__sclif
+            font-size: 22px
+        &__img
+            img
+                height: 300px
+                width: auto
+        &__descrs
+            width: 250px
+        &__equipment
+            font-size: 16px
+    .brands
+        ul 
+            a 
+                li 
+                    img
+                        padding-right: 25px
+    .news
+        margin-top: 130px
+        &__content
+            width: 450px
+            img
+                width: 450px
+                height: auto
+            &_big
+                width: 600px
+                img
+                    height: 168px
+                    width: auto
+        &__head
+            font-size: 17px
+        &__desc 
+            font-size: 15px
+        &__block
+            margin-top: 20px
+        &__descr
+            margin-top: 50px
+            &_two
+                margin-top: 0
+    .recom
+        &__banner
+            bottom: 81px
+            img
+                width: 420px
+                height: auto
+        &__texts
+            top: 170px
+        &__text
+            font-size: 14px
+            margin-top: 10px   
+            &_white
+                left: -10px 
+            &_right
+                right: -225px
+                width: 284px
+        &__equip
+            font-size: 24px 
+            &_white
+                left: -10px
+            &_right
+                right: -225px
+        &__brand
+            font-size: 18px
+            &_white
+                left: -10px 
+            &_right
+                right: -225px
+
+        &__banners
+            width: 500px
+            height: 500px
+            img
+                width: 500px
+                height: auto
+        &__block
+            width: 500px
+            top: -41px
+        &__blockTwo
+            width: 500px
+            img
+                bottom: -8px
+                height: 242px
+        &__contents
+            height: 530px
+    .sentence
+        
+        &__heading
+            text-align: center
+            font-size: 35px
+        &__descr
+            text-align: center
+        &__descrs
+            order: 1
+        &__head 
+            text-align: center
+            font-size: 35px
+        &__info
+            order: 0
+           
+            margin: 0 0px 30px 0
+        .logo_big
+            margin: 0
+            font-size: 35px
+            color: #121212
+            font-weight: normal
+            text-align: center
+            img
+                display: block
+                margin: 0 auto
+        &__comp
+            text-align: center
+        &__inform
+            text-align: center
+    .plus
+        button
+            display: block
+            margin: 20px auto 0 auto
+    .footer
+        margin-top: 100px
+        &__main
+            justify-content: space-around
+        
+
 @media (max-width:1199px)
     .container
         max-width: 800px
