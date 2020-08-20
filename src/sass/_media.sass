@@ -175,3 +175,68 @@
 @media (max-width:1199px)
     .container
         max-width: 800px
+    .header
+        background-color: #e8e7e7
+        min-height: 50px
+        ul 
+            li 
+                color: #ffffff
+                &:nth-child(3)
+                    border-right: none
+                &:nth-child(7)
+                    border-right: none
+                &:nth-child(11)
+                    margin-bottom: 50px
+                a 
+                    font-size: 16px
+
+        &__item
+            position: fixed
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            top: 0
+            left: -100%
+            width: 50%
+            height: 100%
+            padding: 20px 15px
+            background-color: rgba(0,0,0,.8)
+            transition: .6s all
+            z-index: 2
+        
+            &_active
+                left: 0
+        .burger
+            width: 50px
+            height: 50px
+            background-color: #ffaf2d
+            border-radius: 100%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin: 10px 0 0 10px
+            span
+                display: block
+                height: 3px
+                width: 30px
+                background-color: #fff
+                margin-bottom: 5px
+                transition: .5s all
+                &:nth-child(3)
+                    margin: 0
+            &_active
+                position: fixed
+                
+                z-index: 3
+                span
+                    margin-bottom: -5px
+                    
+                    &:nth-child(1)
+                        transform: translateY(-2px) rotate(-45deg)
+                    &:nth-child(2)
+                        display: none
+                    &:nth-child(3)
+                        transform: translateY(0px) rotate(45deg)
+        nav
+            display: flex
