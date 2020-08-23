@@ -22,12 +22,14 @@ window.addEventListener('DOMContentLoaded', () => {
     humburger.addEventListener('click', () => {
         humburger.classList.toggle('burger_active');
         menu.classList.toggle('header__item_active');
+        document.querySelector('.logo').classList.toggle('logo-test');
     });
 
     menuItem.forEach(item => {
         item.addEventListener('click', () => {
             humburger.classList.toggle('burger_active');
             menu.classList.toggle('header__item_active');
+            document.querySelector('.logo').classList.toggle('logo-test');
         });
     });
 });
