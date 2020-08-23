@@ -413,40 +413,38 @@
         width: 694px
         min-height: 510px
         margin: 30px auto
-        &__border
-            border-right: none
-         
-
-        ul 
-            width: 694px
-            flex-wrap: wrap
-            min-height: 510px
-            
-                
+        display: none
+        &_mobile
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+        &__block
+            display: flex
+            justify-content: space-around
+            align-items: center
+            border-bottom: 3px solid #f3f2f2
+            padding: 40px 0
+            &:nth-child(3)
+                border-bottom: none
+        &__link
+            text-decoration: none
+            font-size: 30px
+            font-weight: normal
+            color: #282828
+            line-height: 40px
+            align-
+            &:nth-child(1)
+                border-right: 3px solid #f3f2f2
+                padding: 0 40px 0 0 
+            &_text
+                margin-right: 50px
             img
                 height: 57px
                 width: 240px
-            a 
                 
-                &:nth-child(1)
-                    border-right: 1px solid #e7e6e6
-                    height: 70px
-                    margin-left: 7px
-                    
-                
-                &:nth-child(3)
-                    border-right: 1px solid #e7e6e6
-                    height: 70px
-                    margin-left: 8px
-                &:nth-child(5)
-                    border-right: 1px solid #e7e6e6
-                    height: 70px
-                    margin-right: 15px
-                .all-brands
-                    padding-right: 60px
-                    font-size: 30px
-                    font-weight: normal
-                    color: #282828
+
+
+    
     .news
         display: none
     .recom
@@ -692,3 +690,164 @@
     .plus
         button
             margin-left: 20px
+@media (max-width:767px)
+    .header
+        .logo
+            &_none
+                margin-right: 70px
+                width: 230px
+                div
+                    font-size: 17px
+    .slider
+        &__sale
+            width: 90%
+            height: 400px
+            img
+                height: 130px
+                width: auto
+            a 
+                font-size: 25px
+                
+            .arrow
+                &_yellow
+                    &::after
+                        left: 240px
+                    &::before
+                        left: 240px
+        &__Sale 
+            font-size: 45px
+        &__text
+            font-size: 20px
+    .swiper
+        &__img
+            img
+                height: 360px
+                width: auto
+                margin-right: 10px
+        &__descrs
+            width: 280px
+            margin-left: 10px
+        &__sclif
+            font-size: 35px
+        &__link
+            button
+                font-size: 25px
+    .swiper-slide
+        height: 500px
+    .swiper-container-horizontal
+        .swiper-pagination-bullets
+            bottom: 0px
+            margin-bottom: 15px
+    .swiper-button-next
+        margin-top: 205px
+    .swiper-button-prev
+        margin-top: 205px
+    .swiper-wrapper
+        height: 500px
+    .swiper-container
+        height: 500px   
+    .brands
+        width: 90%
+        &__link
+            &:nth-child(1)
+                padding: 0 60px 0 0
+                          
+            img
+                height: 40px
+                width: 160px
+            &_text
+                margin-right: 20px
+                font-size: 25px
+        &__block
+            padding: 0 0 50px 0
+            margin-top: 50px
+    .recom
+        &__heading
+            font-size: 45px
+        &__descr
+            width: 100%
+            font-size: 25px
+        &__banner
+            &_none
+                width: 90%
+                img
+                    width: 100%
+        &__banners
+            width: 90%
+        &__block
+            width: 100%
+            img
+                width: 100%
+                left: 135px
+        &__blockTwo
+            
+            &_none
+                width: 100%
+                margin-top: 0
+                margin-left: 0
+                right: -37px
+                img
+                    width: 100%
+                    left: -292px
+        &__equip
+            font-size: 35px
+            &_white
+                left: 500px
+            &_right
+                left: 230px
+        &__brand
+            font-size: 25px
+            &_white
+                left: 500px
+                margin-bottom: 20px
+            &_right
+                left: 230px
+        &__text
+            &_white
+                left: 500px
+                width: 350px
+                font-size: 20px
+                margin-top: 55px
+            &_right
+                left: 230px
+        &__texts
+            left: -100px
+    .sentence
+        margin-top: 80px
+        .logo
+            &_big
+                font-size: 45px
+                img
+                    width: 100px
+                    height: 100px
+                    margin: 0 0 30px 0
+                .dev
+                    font-size: 22px
+        &__comp
+            font-size: 35px
+            margin-top: 20px
+            div
+                font-size: 25px
+        &__inform
+            ul
+                font-size: 25px
+        &__heading
+            font-size: 40px
+        &__descr
+            font-size: 25px
+    .plus
+        button
+            width: 55px
+            height: 55px
+            margin-top: 20px
+    .footer
+        margin-top: 80px
+        &__foot
+            margin-top: 40px
+            .logo
+                &_white
+                    font-size: 40px
+                    .creat
+                        font-size: 25px
+        &__dev
+            font-size: 35px
