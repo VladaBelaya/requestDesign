@@ -2,6 +2,15 @@ let swiper = new Swiper('.swiper-container', {
     pagination: {
         el: '.swiper-pagination',
     },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        }
+    }
 });
 
 
