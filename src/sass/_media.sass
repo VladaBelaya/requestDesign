@@ -683,11 +683,7 @@
                 border-radius: 30px
                 padding: 10px 30px
     .recom
-        &__block
-            right: 105px 
-        &__blockTwo
-            &_none
-                right: 105px
+        
     .sentence
         margin-left: 20px 
         margin-right: 63px
@@ -779,14 +775,15 @@
             font-size: 25px
         &__banner
             &_none
-                width: 90%
+                width: 500px
                 img
                     height: 369px
                     width: auto
         &__banners
-            width: 90%
+            width: 500px
+            min-height: 800px
         &__block
-            width: 100%
+            width: 500px
             img
                 height: 300px
                 width: auto
@@ -794,7 +791,7 @@
         &__blockTwo
             
             &_none
-                width: 100%
+                width: 500px
                 margin-top: 15px
                 margin-left: 0
                 height: 350px
@@ -1001,6 +998,7 @@
         
         &__banner
             &_none
+                width: 280px
                 height: 200px
                 img
                     margin-top: 12px
@@ -1008,7 +1006,7 @@
                     height: 185px
                     
         &__texts
-            margin: 0 5px 0 12px
+            margin: 0 10px 0 17px
             width: 160px
         &__brand
             font-size: 15px
@@ -1017,7 +1015,8 @@
                 margin-bottom: 7px
                 width: 100px
                 margin-right: 0
-            
+            &_right
+                margin-top: 0
                 
         &__equip
             font-size: 17px
@@ -1046,13 +1045,15 @@
         &__block-text
             
             width: 150px
-            margin-right: 10px
+            margin-right: 20px
             &_two
                 width: 130px
                 margin-left: 20px
                
         &__block
             height: 240px
+            width: 280px
+
             img
                 height: 210px
                 width: 90px
@@ -1060,16 +1061,21 @@
         &__blockTwo
             &_none
                 height: 200px
+                width: 280px
+
                 img
                     margin-bottom: 10px
                     height: 180px
                     width: 110px
                     margin-top: 8px
         &__banners
-            height: 480px
+            min-height: 480px
+            display: flex
+            flex-direction: column
+            align-items: center
         &__contents
             margin-top: 30px
-            min-height: 700px
+            min-height: 500px
             margin-bottom: 0
            
     .sentence
