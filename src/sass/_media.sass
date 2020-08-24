@@ -7,10 +7,13 @@
     .header
         ul 
             li
+                line-height: 30px
+                padding: 0 4px
                 &:nth-child(3)
-                    padding-right: 15px
+                    padding-right: 10px
                 &:nth-child(7)
-                    padding-right: 15px
+                    padding-right: 10px
+                    padding-left: 4px
                 a
                     font-size: 14px
     .search
@@ -30,7 +33,7 @@
             height: 40px
             width: auto
         &__link
-            margin-right: 50px
+            margin-right: 60px
     .slider
         &__ul
             width: 250px
@@ -91,49 +94,60 @@
                 margin-top: 0
     .recom
         &__banner
-            bottom: 81px
+            width: 475px
+            margin-top: 0
             img
-                width: 420px
+                width: 400px
                 height: auto
+                margin-top: 82px
         &__texts
-            top: 170px
+            margin-top: 52px
         &__text
             font-size: 14px
             margin-top: 10px   
             &_white
-                left: -10px 
+                
             &_right
-                right: -225px
+                
                 width: 284px
         &__equip
             font-size: 24px 
             &_white
-                left: -10px
+                
             &_right
-                right: -225px
+                
         &__brand
             font-size: 18px
             &_white
-                left: -10px 
+                margin-top: 0
             &_right
-                right: -225px
+                
 
         &__banners
-            width: 500px
-            height: 500px
-            img
-                width: 500px
-                height: auto
+            margin-top: 0
+            
+            
         &__block
-            width: 500px
-            top: -41px
-        &__blockTwo
-            width: 500px
+            width: 600px
+            margin-top: 0
             img
-                bottom: -8px
-                height: 242px
+
+
+        &__block-text
+            margin-right: 80px
+
+            &_two
+                margin-right: 22px
+                margin-left: 42px
+            
+        &__blockTwo
+            width: 600px
+            img
+                height: 290px
+                width: 250px
+                margin-top: 24px
         &__contents
-            height: 530px
+            min-height: 750px
     .sentence
         
         &__heading
@@ -450,22 +464,21 @@
     .recom
         &__contents
             flex-direction: column
+            align-items: center
             min-height: 1250px
         &__banner
             display: none
             &_none
                 height: 400px
-
                 display: flex            
-                bottom: 120px
+                flex-direction: row
                 width: 694px
-                margin: 0px auto 0 auto     
+                margin-right: 0
+                    
                 img
-                    width: 694px
-                    height: 400px 
-                    position: relative
-                    top: -200px  
-                    z-index: -1
+                    height: 370px
+                    width: auto
+                    margin-top: 30px
                 
         &__descr
             margin-bottom: 0  
@@ -477,57 +490,63 @@
             font-weight: 300
 
             &_white
-                left: 570px
+                
             &_right
-                left: 250px
+                
         &__texts
-            left: -130px
+            
             align-items: flex-start
-            top: 120px
-            width: 270px
+            margin: 0 78px 0 55px
+            width: 370px
         &__equip
             font-size: 40px
             font-weight: normal
             margin-bottom: 20px
             &_white
-                left: 570px
+                
                 margin-top: 25px
             &_right
-                left: 250px
+                
         &__text
             text-align: left
             font-size: 20px
             font-weight: 300
             &_white
-                left: 570px
+                width: 100%
+                font-size: 18px
                 margin-top: 35px
             &_right
-                left: 250px
+                
         &__block
             width: 694px
-            display: block
-            top: -200px
             margin-top: 15px
-
-            
+            margin-right: 0
             img
-                width: 694px
-                height: 400px
+                width: 200px
+                height: 350px
         &__blockTwo
             display: none
             &_none
                 width: 694px
-                top: -500px
-                margin-left: 142px
-                display: flex
-            img
-               
-                width: 694px
                 height: 400px
+                margin-left: 0
+                display: flex
+                margin-top: 15px
+            &_img
+                display: none
+            
+                &-none
+                    display: block
+            
+        
+                
+            
+
         &__block-text
-            bottom: 370px
+            width: 400px
+            margin-right: 45px
             &_two
-                bottom: 0px
+                
     .sentence
         justify-content: flex-start
         &__info
@@ -763,6 +782,9 @@
             margin-top: 50px
     .recom
         margin: 120px 10px 0 10px
+        &__contents
+            min-height: 1260px
+            margin-top: 20px
         &__heading
             font-size: 45px
         &__descr
@@ -772,47 +794,58 @@
             &_none
                 width: 90%
                 img
-                    width: 100%
+                    height: 369px
+                    width: auto
         &__banners
             width: 90%
         &__block
             width: 100%
             img
-                width: 100%
-                left: 135px
+                height: 300px
+                width: auto
+                
         &__blockTwo
             
             &_none
                 width: 100%
-                margin-top: 0
+                margin-top: 15px
                 margin-left: 0
-                right: -37px
+                height: 350px
                 img
-                    width: 100%
-                    left: -292px
+                    width: auto
+                    height: 250px
+                    
         &__equip
-            font-size: 35px
+            font-size: 30px
             &_white
-                left: 500px
+                margin-bottom: 10px
+                width: 200px
             &_right
-                left: 230px
+                
         &__brand
-            font-size: 25px
+            font-size: 22px
             &_white
-                left: 500px
-                margin-bottom: 20px
+                margin-bottom: 10px
             &_right
-                left: 230px
+                margin-top: 6px
         &__text
+            font-size: 15px
+            width: 280px
             &_white
-                left: 500px
-                width: 350px
-                font-size: 20px
-                margin-top: 55px
+                
+                width: 100%
+                font-size: 18px
+                margin-top: 15px
             &_right
-                left: 230px
+                
         &__texts
-            left: -100px
+            width: 280px
+            margin: 0 5px 0 20px
+        &__block-text
+            margin-right: 25px
+            width: 280px
+            &_two
+                margin-left: 29px
     .sentence
         margin-top: 80px
         .logo
@@ -981,82 +1014,74 @@
             font-size: 18px
         &__banner
             &_none
-                height: 240px
+                height: 200px
                 img
-                    height: 240px
-                    top: -246px
+                    margin-top: 12px
+                    width: 91px
+                    height: 185px
+                    
         &__texts
-            left: -40px
-            top: -45px 
+            margin: 0 5px 0 12px
             width: 160px
         &__brand
             font-size: 15px
+            margin-top: 15px
             &_white
                 margin-bottom: 7px
                 width: 100px
-                left: 80px
                 margin-right: 0
             &_right
-                left: 10px
+                
         &__equip
             font-size: 17px
             margin: 5px 0
             &_right
                 width: 250px
-                left: 10px
-
             &_white
-                left: 80px
+                width: 100%
+                
                 margin-right: 0
-
-        
-
         &__text
             font-size: 15px
+            width: 160px
             &_white
-                font-size: 13px
-                width: 170px
-                margin-top: 15px
-                left: 80px
+                font-size: 12px
+                width: 100%
+
+                margin-top: 7px
                 margin-right: 0
 
             &_right
-                width: 170px    
-                margin-top: 23px
+                font-size: 12px
+                width: 100%  
+                margin-top: 7px
                 margin-right: 0
-                left: 10px
-                
-
         &__block-text
-            bottom: 220px
-            left: 14px
-            width: 200px
-            margin-right: 0
+            
+            width: 150px
+            margin-right: 10px
             &_two
-                left: 0
-                bottom: -225px
+                width: 130px
+                margin-left: 20px
+               
         &__block
             height: 240px
-            top: -289px
-            right: 0
             img
-                height: 240px
-                left: 14px
-
+                height: 210px
+                width: 90px
+                margin-right: 20px
         &__blockTwo
             &_none
                 height: 240px
-                right: -13px
                 img
-                    height: 240px
-                    left: -200px
-                    bottom: -225px
+                    height: 180px
+                    width: 110px
+                   
         &__banners
             height: 400px
         &__contents
             min-height: 720px
-            position: relative
-            top: 221px    
+           
     .sentence
         margin: 80px 20px 0 20px
         &__info

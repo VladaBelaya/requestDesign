@@ -12,14 +12,20 @@
             margin: 15px 0 15px 0
             opacity: 0.85
             transition-duration: 0.3s
+            line-height: 40px
+            padding: 0 20px
             &:hover
                 opacity: 1
+                background-color: #33bb6f
             &:nth-child(3)
                 border-right: 1px solid #d5bee7
                 padding-right: 29px
             &:nth-child(7)
                 border-right: 1px solid #d5bee7
-                padding-right: 29px
+                padding: 0 29px
+
+            &:nth-child(10)
+                position: relative
             a 
                 display: flex
                 align-items: center
@@ -31,6 +37,8 @@
                     margin-right: 8px
                 .second
                     margin-right: 4px
+                &:nth-child(7)
+
     .burger
         display: none           
     &__none
@@ -48,3 +56,20 @@
         display: none
     &__block
         display: none
+    .copy__btn
+        position: absolute
+        bottom: -65px
+        background-color: #232323
+        border: none
+        padding: 15px 35px
+        border-radius: 23px
+        color: #ffffff
+        font-size: 16px
+        outline: none
+        opacity: 0
+        transition: 0.3s opacity
+        cursor: pointer
+        &_active
+            opacity: 1
+    &__item
+        height: 50px
