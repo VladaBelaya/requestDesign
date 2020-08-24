@@ -23,8 +23,8 @@ window.addEventListener('DOMContentLoaded', () => {
         logoMobile = document.querySelector('.logo'),
         copyBtn = document.querySelector('.copy__btn'),
         mobile = document.querySelector('.header__mobile'),
-        modal = document.querySelector('.modal');
-
+        modal = document.querySelector('.modal'),
+        phone = document.querySelector('#phone');
     // mobile.addEventListener('mouseover', () => {
     //     modal.classList.toggle('modal_active');
     // });
@@ -56,4 +56,5 @@ window.addEventListener('DOMContentLoaded', () => {
 
         });
     });
+
 });

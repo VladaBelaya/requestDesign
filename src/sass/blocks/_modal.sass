@@ -1,5 +1,5 @@
 .modal
-    height: 360px
+    height: 400px
     width: 750px
     background-color: #fff
     position: absolute
@@ -23,21 +23,113 @@
             top: 15px
             right: 10px
             width: 25px
-            height: 3px
+            height: 2px
             transform: rotate(55deg) translateY(-100%) 
             
             background-color: #919191
             &:nth-child(2)
-                top: 10px
-                transform: translateY(100%) translateX(10%) rotate(-55deg)
+                top: 11px
+                transform: translateY(100%) translateX(5%) rotate(-55deg)
     &__number
+        font-size: 17px
+        color: #888888
+        font-weight: 300
+        line-height: 25px
+        margin-top: 20px
         .mobile
             font-size: 30px
             color: #00a94b
-            z-index: 3
+             
     &__descr
         line-height: 25px
     &_active
         opacity: 1
         z-index: 2
         top: 43px
+    &__content
+        display: flex
+        justify-content: space-around
+        align-items: center
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        margin-bottom: 30px
+        li 
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            width: 125px
+            margin-top: 5px
+            margin-right: 150px
+            font-size: 17px
+            font-weight: 300
+
+            &:nth-child(1)
+                width: 200px
+                margin-right: 90px
+
+            a
+                color: #000000
+                font-size: 17px
+                font-weight: 300
+            img 
+                margin: 0 15px 0 0
+                width: auto
+                height: 30px
+    &__form
+        width: 260px
+        margin-bottom: 10px
+        margin-right: 40px
+        button
+            font-size: 18px
+            color: #ffffff
+            font-weight: normal
+            background-color: #ff8c00
+            padding: 10px 20px
+            border-radius: 24px
+            border: none
+            outline: none
+            margin-top: 20px
+            cursor: pointer
+    &__text
+        font-size: 30px
+        margin-bottom: 30px 
+        &_min
+            font-size: 17px
+            color: #888888
+            font-weight: 300
+            line-height: 20px
+    &__name
+        font-size: 17px
+        font-weight: 300
+        line-height: 20px
+        
+        input
+            width: 90%
+            border: none
+            border-bottom: 1px solid #9b9b9b
+            padding: 10px 20px
+            font-size: 17px
+            outline: none
+            font-weight: normal
+            columns: #222222
+            &:hover
+                border-bottom: 1px solid #ff8c00
+    &__tel
+        font-size: 17px
+        font-weight: 300
+        line-height: 20px
+        margin-top: 20px
+        input
+            width: 90%
+            border: none
+            border-bottom: 1px solid #9b9b9b
+            padding: 10px 20px
+            margin-left: 2
+            font-size: 17px
+            font-weight: normal
+            columns: #222222
+            outline: none
+            &:hover
+                border-bottom: 1px solid #ff8c00
