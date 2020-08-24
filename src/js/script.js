@@ -37,11 +37,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
     document.addEventListener('scroll', () => {
         if (window.pageYOffset > 100 && humburger.classList.contains('burger_active')) {
-            humburger.classList.remove('burger_active')
+            humburger.classList.remove('burger_active');
             menu.classList.remove('header__item_active');
             logoMobile.classList.remove('logo-mobile');
         }
-    })
+    });
 
 
     showEmail.addEventListener('click', () => {
