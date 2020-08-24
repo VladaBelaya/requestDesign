@@ -1,0 +1,43 @@
+.modal
+    height: 360px
+    width: 750px
+    background-color: #fff
+    position: absolute
+    color: #000000
+    opacity: 0.3
+    right: 0
+    top: -365px
+    transition: 0.2s opacity
+    &__close
+        position: relative
+        margin-top: 10px
+        width: 40px
+        height: 30px
+        left: 93%
+        outline: none
+        border: none
+        background-color: #fff
+        cursor: pointer
+        span
+            position: absolute
+            top: 15px
+            right: 10px
+            width: 25px
+            height: 3px
+            transform: rotate(55deg) translateY(-100%) 
+            
+            background-color: #919191
+            &:nth-child(2)
+                top: 10px
+                transform: translateY(100%) translateX(10%) rotate(-55deg)
+    &__number
+        .mobile
+            font-size: 30px
+            color: #00a94b
+            z-index: 3
+    &__descr
+        line-height: 25px
+    &_active
+        opacity: 1
+        z-index: 2
+        top: 43px

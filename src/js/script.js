@@ -20,7 +20,20 @@ window.addEventListener('DOMContentLoaded', () => {
         menuItem = document.querySelectorAll('.header__item li'),
         humburger = document.querySelector('.burger'),
         showEmail = document.querySelector('.header__link'),
-        copyBtn = document.querySelector('.copy__btn');
+        logoMobile = document.querySelector('.logo'),
+        copyBtn = document.querySelector('.copy__btn'),
+        mobile = document.querySelector('.header__mobile'),
+        modal = document.querySelector('.modal');
+
+    // mobile.addEventListener('mouseover', () => {
+    //     modal.classList.toggle('modal_active');
+    // });
+    // modal.addEventListener('mousemove', () => {
+    //     modal.classList.toggle('modal_active');
+    // });
+    // // modal.addEventListener('mouseout', () => {
+    // //     modal.classList.remove('modal_active');
+    // // });
 
     showEmail.addEventListener('click', () => {
         copyBtn.classList.toggle('copy__btn_active');
@@ -32,14 +45,14 @@ window.addEventListener('DOMContentLoaded', () => {
     humburger.addEventListener('click', () => {
         humburger.classList.toggle('burger_active');
         menu.classList.toggle('header__item_active');
-        document.querySelector('.logo').classList.toggle('logo-test');
+        logoMobile.classList.toggle('logo-mobile');
     });
 
     menuItem.forEach(item => {
         item.addEventListener('click', () => {
             humburger.classList.toggle('burger_active');
             menu.classList.toggle('header__item_active');
-            document.querySelector('.logo').classList.toggle('logo-test');
+            logoMobile.classList.toggle('logo-mobile');
 
         });
     });
