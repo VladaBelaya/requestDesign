@@ -3,7 +3,6 @@ let swiper = new Swiper('.swiper-container', {
         el: '.swiper-pagination',
     },
     breakpoints: {
-        // when window width is >= 320px
         320: {
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -24,7 +23,8 @@ window.addEventListener('DOMContentLoaded', () => {
         copyBtn = document.querySelector('.copy__btn'),
         mobile = document.querySelector('.header__mobile'),
         modal = document.querySelector('.modal'),
-        modalClose = document.querySelector('.modal__close');
+        phone = document.querySelector('#phone');
+        modalClose = document.querySelector('.modal__close')
 
 
     mobile.addEventListener('mouseenter', () => {
@@ -34,10 +34,10 @@ window.addEventListener('DOMContentLoaded', () => {
     modalClose.addEventListener('click', () => {
         modal.classList.remove('modal_active');
     });
-
+    
     document.addEventListener('scroll', () => {
         if (window.pageYOffset > 100 && humburger.classList.contains('burger_active')) {
-            humburger.classList.remove('burger_active');
+            humburger.classList.remove('burger_active')
             menu.classList.remove('header__item_active');
             logoMobile.classList.remove('logo-mobile');
         }
@@ -46,6 +46,13 @@ window.addEventListener('DOMContentLoaded', () => {
 
     showEmail.addEventListener('click', () => {
         copyBtn.classList.toggle('copy__btn_active');
+           document.addEventListener('click', event => {
+               if(!event.target.dataset.copy &&
+                  !event.target.dataset.link &&
+                  copyBtn.classList.contains('copy__btn_active')) {
+                  copyBtn.classList.remove('copy__btn_active');
+               }
+           });
     });
     copyBtn.addEventListener('click', () => {
         copyBtn.classList.remove('copy__btn_active');
