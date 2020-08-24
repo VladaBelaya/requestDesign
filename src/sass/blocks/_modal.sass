@@ -4,10 +4,11 @@
     background-color: #fff
     position: absolute
     color: #000000
-    opacity: 0.3
+    
     right: 0
     top: -365px
-    transition: 0.2s opacity
+    transition: 0.3s 
+    display: none
     &__close
         position: relative
         margin-top: 10px
@@ -43,9 +44,10 @@
     &__descr
         line-height: 25px
     &_active
-        opacity: 1
+        
         z-index: 2
         top: 43px
+        display: block
     &__content
         display: flex
         justify-content: space-around
